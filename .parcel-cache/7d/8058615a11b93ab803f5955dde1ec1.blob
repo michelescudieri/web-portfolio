@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1e64a90044148a377813d99d8dc6773a">
+    <link rel="stylesheet" href="b43524520c6846549a9a9beebfbdcb23">
+    <link rel="stylesheet" href="9de11538a82a4d196431fef3869dad7d">
+</head>
+<body data-scroll-container="" data-barba="wrapper" data-barba-namespace="about">
+    <div class="page">
+        <main data-barba="container">
+        <header class="nav-container">
+            <a class="logo a-blue" href="2a87cad021d6ef581465b6ff79ef8dcd">Michele Scudieri</a>
+            
+            <nav>
+               <ul class="nav-menu">
+                 <li> <a class="a-blue" href="46e3d1b4e8f27d7a671ea9f131cb1d38">About</a></li>
+                 <li> <a class="a-blue" href="c3975ab733a78f006070704023f04394">Work</a></li>
+               </ul>
+            </nav>
+        </header>
+        
+        <div data-scroll-section="" class="top-container">
+            <h2 class="page-heading">Michele <br> Scudieri</h2>
+            <h3 class="page-desc">/about me
+        </h3></div>
+        
+        
+        <div data-scroll-section="" class="profile-present">
+            
+            
+            <div data-scroll="" data-scroll-speed="0.8" class="profile-img"><img src="f5645617cc34573ef66e4f4a54790819" alt=""></div>
+            
+            <div data-scroll="" data-scroll-speed="1.3" class="profile-desc">
+                <p>
+                    Artworks and illustrations were my gateway to the creative industry 
+                    which led me to my first Job as Graphic designer 6 year ago. 
+                    Year after year my passion grew stronger and so did my skills.
+                    I tried to learn as much as possible from every person and experience.
+                    <br><br>
+                    In the past years I've been working and studying in different areas of 
+                    digital-design; front-end development, textile design, brand identity, 
+                    logo design, and I'm approaching to the UI/UX world as fast as I can. 
+                </p>
+            </div>
+        
+            <section data-scroll="" class="profile-extra">
+                
+    
+                <p data-scroll="" data-scroll-speed="1" class="hobby-desc">
+                    Nature is my thing, I'm a serial hiker. Out of the office I'm a dreamer, 
+                    all day long. I love to sing, play guitar, piano, harp. Nobody can stop me!
+            
+                </p>
+    
+                <div data-scroll="" data-scroll-speed="0.8" class="hobby-gallery">
+                    <div class="hfoto1"><img src="f4d4e66cb4990c5353ae0a1fd75a3212" alt="foto1"></div>
+                    <div class="hfoto2"><img src="76a4aa51caf8105cbd2f11894186e631" alt="foto2"></div>
+                    <div class="hfoto3"><img src="516c12160519703ded112b55d59e0f2e" alt="foto3"></div>
+                </div>
+            
+                
+    
+                <div data-scroll="" class="exp">
+                    <h4 data-scroll="" data-scroll-speed="1.1" class="exp-title">/experiences</h4>
+                    <ul data-scroll="" data-scroll-speed="1.3">
+                        <li>StamArt Group <em>2016 - Current</em></li>
+                        <li>AmbroArt <em>2015- 2016</em></li>
+                        <li>BuyItalianStyle <em>2014- 2015</em></li>
+                    </ul>
+                </div>
+            </section>
+        </div>   
+    
+        <footer data-scroll-section="" class="cta-container">
+                <div data-scroll="" class="cta">
+                    <h1 data-scroll="" class="cta-title">Let's get in touch!</h1>
+                    <h3 data-scroll="" data-scroll-speed="1.3" class="cta-subtitle">We can work togheter.</h3>
+    
+                    <ul data-scroll="" data-scroll-speed="1.3" class="contact">
+                        <li>email me</li>
+                        <li>linkedIn</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+        </footer>
+    </main>
+        
+        
+        
+        
+    </div>
+
+    <script src="21c0f652556044657a547e626e1f8d02"></script>
+    <script src="d642e5efe4b20ae1248f2704bff0ace8"></script>    
+</body>
+</html>

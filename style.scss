@@ -1,0 +1,429 @@
+
+
+body {
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    min-width: 370px ;
+    font-family: Orpheus Pro;
+    font-weight: lighter;
+    font-size: 100%;
+}
+
+
+
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h4,h5 {
+    font-family: Niveau Grotesk;
+    font-weight: normal;
+    
+}
+
+/*NAVBAR*/
+.nav-container {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-family: Niveau Grotesk;
+    font-weight: lighter;
+    height: 1rem;
+    z-index: 1;
+    
+
+
+    .nav-menu {
+        display: flex;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: 1rem;
+        padding: 0;
+        
+        a {
+            display: block;
+            padding: 0 1rem;
+        }
+        
+    }
+    
+    .a-blue {
+        color:white;
+    }
+}
+
+/*HOME*/
+.hero {
+    padding:10vw 0;
+    text-align: left;
+    margin: 12vw 4vw;
+    
+    h2 {
+        -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+        color: black;
+        display: block;
+        font-size: 12vw;
+        margin-bottom: -17vw;
+    }
+
+    p {
+        text-align: right;
+        display: block;
+        font-size: 10vw;
+        font-family: Niveau Grotesk;
+        font-weight:lighter;
+        
+        em {
+            font-style: normal;
+            font-size: 3vw;
+        }
+    }
+}
+
+.description {
+    margin:0 10vw;
+    font-size: 2rem;
+
+}
+.home-project {
+    margin: 10vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+
+    a {
+        overflow: hidden;
+        position: relative;
+
+        .foto-project {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title  {
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        .subtitle {
+            margin: 0;
+            padding: 0;
+            color: white;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+    }  
+}
+
+.redirect {
+    display: flex;
+    justify-content: flex-end;
+    margin:10vw 10vw;
+    font-size: 3vw;
+    
+}
+
+
+/*TOP CONTAINER*/
+
+.top-container {
+    background-color:black;
+    height: 18rem;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    
+    
+    .page-desc {
+        margin-left: 1rem;
+        margin-top: 3rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: lighter;
+        font-family: Niveau Grotesk;
+        position: absolute;
+        bottom: 15%;
+        left: 0rem;
+    }
+    .page-heading {
+        
+        font-size: 10.5rem;
+        font-weight: lighter;
+        letter-spacing: -0.020em;
+        -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+        color: black;
+        line-height: 52%;
+        margin-left: -1rem;
+        
+        position: absolute;
+        bottom: -130px;
+        object-fit: contain;
+    }
+}
+
+/*ABOUT*/
+
+.profile-img {
+    margin: 2rem 1rem;
+    height: 19rem;
+    overflow: hidden;
+    position: relative;
+    
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+
+.profile-desc {
+    font-family: Niveau Grotesk;
+    font-weight: lighter;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    line-height: 125%;
+}
+
+.hobby-desc {
+    margin-left: 1rem;
+    font-family: Niveau Grotesk;
+}
+
+.hobby-gallery {
+    display: grid;
+    grid-template-columns:repeat(2 .5fr);
+    grid-template-areas: 
+    "f1 f2"
+    "f3 f2";
+    grid-gap: .5rem;
+    margin:0 1rem;
+    
+    .hfoto1 {
+        grid-area: f1;
+        height: 30rem;
+    }
+    .hfoto2 {
+        grid-area: f2;
+        height: 100%;
+    }
+    .hfoto3 {
+        grid-area: f3;
+        height: 100%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+   
+}
+
+
+.exp {
+    padding-top: 2rem;
+    margin: 1rem;
+    
+    ul{
+        font-family: Niveau Grotesk;
+        font-size: 3rem;
+        
+
+        em {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+            
+        }
+    }
+}
+
+/*WORK*/
+
+.work-top {
+     margin:2rem 0;
+    
+    .work-list {
+        margin:0 1rem;
+        font-size: 3.5rem;
+
+        .list-item-1 {
+             font-family:Niveau Grotesk;
+             font-weight: lighter;
+             border-bottom:solid 1px;
+        }
+        .list-item-2 {
+            font-style: oblique;
+            border-bottom:solid 1px;
+        }
+        .list-item-3 {
+            font-family:Niveau Grotesk;
+            border-bottom:solid 1px;
+            
+        }
+    }
+    
+    .work-img {
+        display: grid;
+        align-items: flex-end;
+        grid-template-columns: 1fr;
+        margin:2rem 1rem;
+        img {
+             width: 100%;
+             height: 190px;
+             object-fit: cover;
+        }
+    }
+}
+
+.work-container {
+    margin: 0 1rem;
+    border-bottom: solid 1px;
+    .title {
+        font-size: 4rem;
+        margin-bottom: -2.35rem;
+        font-weight: lighter;   
+    }
+
+    .textile-gallery {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: .5rem;
+        margin-bottom: 3rem;
+        
+   
+        a {
+            z-index: -1;
+            height: 250px;
+            background-color: blue;
+            
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+
+    .graphic-gallery {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: .5rem;
+        margin-bottom: 3rem;
+        a {
+            z-index: -1;
+            height: 250px;
+            background-color: blue;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+    
+    .work-services {
+        padding-bottom: 1.5rem;
+        
+        .services-list {
+            font-size: 2rem;
+            font-style: oblique;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+            li {
+                line-height: 1.5rem;
+                
+            }
+        }
+    }
+    
+    .work-desc {
+        font-family: Niveau Grotesk;
+        font-size: 1.5rem;
+
+        h4 {
+            margin-top: 1.2rem;
+        }
+
+        p {
+            line-height: 2rem;
+            margin-top: -2  rem;
+        }
+    
+    }
+}
+
+
+/*FOOTER*/
+
+
+
+.cta-container {
+    margin: 1rem;
+    
+    .cta {
+        position: relative;
+        
+        .cta-title{
+            font-size: 5rem;
+            letter-spacing: -7px;
+            -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+        color: black;
+        }
+        .cta-subtitle {
+            font-family: Niveau Grotesk;
+            font-weight: normal;
+            font-size: 2rem;
+            position: absolute;
+            top: 4rem;
+        }
+        .contact {
+            font-size: 1rem;
+            margin-top: -1.5rem;
+            display: flex;
+            justify-content: flex-end;
+            li {
+                margin-left: 1rem;
+            }
+        } 
+    } 
+    
+}
+
+
+@import "mediaq";
+
+
+
+
