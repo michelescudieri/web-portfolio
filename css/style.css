@@ -4,13 +4,14 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
   width: 100%;
-  min-width: 370px;
   font-family: Orpheus Pro;
   font-weight: lighter;
   font-size: 100%;
+}
+
+body::before, body::after {
+  box-sizing: border-box;
 }
 
 ul, li {
@@ -27,6 +28,33 @@ a {
 h4, h5 {
   font-family: Niveau Grotesk;
   font-weight: normal;
+}
+
+/*LINK HOVER*/
+.link {
+  position: relative;
+  transition: clip-path 275ms ease;
+}
+
+.link:hover span::before, .link:focus span::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.link span {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.link span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+  opacity: 80%;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 275ms ease;
 }
 
 /*NAVBAR*/
@@ -62,7 +90,7 @@ h4, h5 {
 
 /*HOME*/
 .hero {
-  padding: 10vw 0;
+  padding: 30vw 1vw;
   text-align: left;
   margin: 12vw 4vw;
 }
@@ -89,14 +117,14 @@ h4, h5 {
 }
 
 .description {
-  margin: 0 10vw;
+  margin: 0 1rem;
   font-size: 2rem;
 }
 
 .home-project {
   margin: 10vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 1rem;
   justify-content: center;
 }
@@ -104,6 +132,8 @@ h4, h5 {
 .home-project a {
   overflow: hidden;
   position: relative;
+  pointer-events: none;
+  cursor: default;
 }
 
 .home-project a .foto-project {
@@ -112,29 +142,11 @@ h4, h5 {
   object-fit: cover;
 }
 
-.home-project a .title {
-  margin: 0;
-  padding: 0;
-  color: white;
-  position: absolute;
-  top: 10px;
-  left: 20px;
-}
-
-.home-project a .subtitle {
-  margin: 0;
-  padding: 0;
-  color: white;
-  position: absolute;
-  top: 50px;
-  left: 20px;
-}
-
 .redirect {
   display: flex;
   justify-content: flex-end;
-  margin: 10vw 10vw;
-  font-size: 3vw;
+  margin: 10vw 8vw;
+  font-size: 5vw;
 }
 
 /*TOP CONTAINER*/
@@ -144,6 +156,8 @@ h4, h5 {
   width: 100%;
   position: relative;
   z-index: -1;
+  width: auto;
+  overflow: hidden;
 }
 
 .top-container .page-desc {
@@ -167,14 +181,14 @@ h4, h5 {
   line-height: 52%;
   margin-left: -1rem;
   position: absolute;
-  bottom: -130px;
+  bottom: -120px;
   object-fit: contain;
 }
 
 /*ABOUT*/
 .profile-img {
   margin: 2rem 1rem;
-  height: 19rem;
+  height: 23rem;
   overflow: hidden;
   position: relative;
 }
@@ -209,7 +223,7 @@ h4, h5 {
 
 .hobby-gallery .hfoto1 {
   grid-area: f1;
-  height: 30rem;
+  height: 15rem;
 }
 
 .hobby-gallery .hfoto2 {
@@ -235,7 +249,7 @@ h4, h5 {
 
 .exp ul {
   font-family: Niveau Grotesk;
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .exp ul em {
@@ -288,9 +302,13 @@ h4, h5 {
 }
 
 .work-container .title {
-  font-size: 4rem;
-  margin-bottom: -2.35rem;
+  font-size: 3rem;
+  margin-bottom: -1.8rem;
   font-weight: lighter;
+}
+
+.work-container .work-img {
+  height: 200px;
 }
 
 .work-container .textile-gallery {
@@ -302,7 +320,7 @@ h4, h5 {
 
 .work-container .textile-gallery a {
   z-index: -1;
-  height: 250px;
+  height: 200px;
   background-color: blue;
 }
 
@@ -321,7 +339,7 @@ h4, h5 {
 
 .work-container .graphic-gallery a {
   z-index: -1;
-  height: 250px;
+  height: 200px;
   background-color: blue;
 }
 
@@ -336,14 +354,18 @@ h4, h5 {
 }
 
 .work-container .work-services .services-list {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-style: oblique;
+  justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
 }
 
 .work-container .work-services .services-list li {
   line-height: 1.5rem;
+  display: flex;
 }
 
 .work-container .work-desc {
@@ -357,7 +379,7 @@ h4, h5 {
 
 .work-container .work-desc p {
   line-height: 2rem;
-  margin-top: -2  rem;
+  margin-top: -1rem;
 }
 
 /*FOOTER*/
@@ -370,7 +392,7 @@ h4, h5 {
 }
 
 .cta-container .cta .cta-title {
-  font-size: 5rem;
+  font-size: 4rem;
   letter-spacing: -7px;
   -webkit-text-stroke: 0.5px white;
   color: black;
@@ -379,7 +401,7 @@ h4, h5 {
 .cta-container .cta .cta-subtitle {
   font-family: Niveau Grotesk;
   font-weight: normal;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   top: 4rem;
 }
@@ -401,9 +423,16 @@ h4, h5 {
     padding: 0;
   }
   .description {
+    margin: 0 10vw;
     font-size: 3rem;
   }
+  .home-project {
+    margin: 10vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
   .redirect {
+    margin: 10vw 10vw;
     font-size: 1.5vw;
   }
   .top-container {
@@ -413,7 +442,7 @@ h4, h5 {
   .top-container .page-heading {
     font-size: 36rem;
     position: absolute;
-    bottom: -28rem;
+    bottom: -27rem;
   }
   .profile-present {
     position: relative;
@@ -425,7 +454,7 @@ h4, h5 {
   }
   .profile-present .profile-img {
     grid-area: p-img;
-    height: 110%;
+    height: 90%;
   }
   .profile-present .profile-desc {
     grid-area: p-des;
@@ -485,6 +514,20 @@ h4, h5 {
   }
   .graphic-container .work-services {
     grid-area: w-ser;
+  }
+  .graphic-container .work-services .services-list {
+    margin-top: 2.5rem;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .graphic-container .work-services .services-list li {
+    padding-bottom: 2rem;
+  }
+  .graphic-container .work-services h4 {
+    display: flex;
+    justify-content: flex-end;
   }
   .graphic-container .work-desc {
     grid-area: w-des;
