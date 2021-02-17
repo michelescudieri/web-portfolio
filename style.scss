@@ -64,11 +64,9 @@ h4,h5 {
 .nav-container {
     position: fixed;
     top: 0px;
-    width: 100%;
-    
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+    position: relative;
+    margin: 1rem;
     font-family: Niveau Grotesk;
     font-weight: lighter;
     height: 1rem;
@@ -78,14 +76,10 @@ h4,h5 {
 
     .nav-menu {
         display: flex;
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: 1rem;
-        padding: 0;
-        
+        position: absolute;
+        right: 0;
         a {
-            display: block;
-            padding: 0 1rem;
+            padding-left:1rem;
         }
         
     }
@@ -97,28 +91,34 @@ h4,h5 {
 
 /*HOME*/
 .hero {
-    padding:30vw 1vw;
     text-align: left;
-    margin: 12vw 4vw;
+    margin: 12rem 2rem;
+    text-align: center;
+    
+    
     
     h2 {
-        -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+        -webkit-text-stroke: 0.3px rgb(255, 255, 255);
         color: black;
-        display: block;
-        font-size: 12vw;
-        margin-bottom: -17vw;
+        font-size: 10.5vw;
+        line-height: 0;
+        position: relative;
+        left: -2rem;
     }
 
     p {
-        text-align: right;
-        display: block;
-        font-size: 10vw;
+        position: relative;
+        left: 1rem;
+        font-size: 9.4vw;
         font-family: Niveau Grotesk;
         font-weight:lighter;
+        line-height: 0%;
+        
         
         em {
             font-style: normal;
-            font-size: 3vw;
+            font-size: 3.5vw;
+            line-height: 0%;
         }
     }
 }
@@ -132,7 +132,7 @@ h4,h5 {
     
     margin: 10vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px,380px));
     grid-gap: 1rem;
     justify-content: center;
 
@@ -270,12 +270,12 @@ h4,h5 {
     
     ul{
         font-family: Niveau Grotesk;
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         
 
         em {
             margin-left: 0.5rem;
-            font-size: 0.9rem;
+            font-size: 0.6rem;
             
         }
     }
@@ -323,9 +323,11 @@ h4,h5 {
     margin: 0 1rem;
     border-bottom: solid 1px;
     .title {
-        font-size: 3rem;
-        margin-bottom: -1.8rem;
-        font-weight: lighter;   
+        font-size: 12vw;
+        font-weight: lighter; 
+        line-height: 0%;  
+        position: relative;
+        bottom: -4vw;
     }
 
     .work-img {
@@ -342,7 +344,7 @@ h4,h5 {
         a {
             z-index: -1;
             height: 200px;
-            background-color: blue;
+            background-color: rgb(255, 255, 255);
             
             img {
                 object-fit: cover;
@@ -362,7 +364,7 @@ h4,h5 {
         a {
             z-index: -1;
             height: 200px;
-            background-color: blue;
+            background-color: rgb(255, 255, 255);
             img {
                 object-fit: cover;
                 width: 100%;
@@ -420,8 +422,8 @@ h4,h5 {
         position: relative;
         
         .cta-title{
-            font-size: 4rem;
-            letter-spacing: -7px;
+            font-size: 2.5rem;
+            letter-spacing: -2px;
             -webkit-text-stroke: 0.5px rgb(255, 255, 255);
         color: black;
         }
@@ -430,11 +432,11 @@ h4,h5 {
             font-weight: normal;
             font-size: 1.5rem;
             position: absolute;
-            top: 4rem;
+            top: 2rem;
         }
         .contact {
             font-size: 1rem;
-            margin-top: -1.5rem;
+            margin-top: 1rem;
             display: flex;
             justify-content: flex-end;
             li {

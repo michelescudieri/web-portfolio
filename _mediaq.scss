@@ -1,44 +1,47 @@
-/* Tablet mode */
+/* Tablet-Pc Mode */
 
 @media screen and (min-width: 768px) {
      
-    .hero {
-        padding:0;
-    }
-
+    
 
     .description {
+        
         margin:0 10vw;
         font-size: 3rem;
     
     }
     
     .home-project {
-    
-        margin: 10vw;
+       
+        margin:0 10vw;
+        margin-top: 4rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
     }
     .redirect {
-        margin: 10vw 10vw;
+        margin: 5rem 10vw;
         font-size: 1.5vw;
         
     }
 
     .top-container {
-        height: 100vh;
+        height: 45rem;
         width: auto;
         .page-heading {
             font-size: 36rem;
             position: absolute;
-            bottom: -27rem;
+            bottom: -25rem;
         }
+    }
+    #top-work {
+        height: 35rem;
     }
 
     
     
     .profile-present {
-        position: relative;
+        max-width: 900px;
+        
         margin:0 10vw;
         margin-top: 2rem;
         grid-template-columns: 1fr 2fr;
@@ -60,10 +63,14 @@
             grid-area: p-ext;
         }
     }
-
+    .center {
+        display: flex;
+        justify-content: center;
+    }
     
     .work-top {
-        margin:2rem 10vw;
+        margin:0 10vw;
+        margin-top: 2rem;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto;
@@ -78,11 +85,12 @@
         }
     }
     
+
     .work-container {
         margin:0 10vw;
         .title {
             font-size: 7vw;
-            margin-bottom: -4vw;  
+            
         }
         .work-services {
 
@@ -109,6 +117,10 @@
 
         .textile-gallery {
             grid-area: t-gal;
+            height: auto;
+            a {
+                height: 350px;
+            }
         }
 
         .work-services {
@@ -127,13 +139,20 @@
         "g-gal g-gal"
         "w-des w-ser";
         grid-template-columns: 4fr 1fr;
+    
 
         .graphic-gallery {
             grid-area: g-gal;
+            height: auto;
+            a {
+                height: 350px;
+            }
+            
         }
 
         .work-services {
             grid-area: w-ser;
+            
             .services-list {
                 margin-top: 2.5rem;
                 width: 220px;
@@ -141,8 +160,12 @@
                 flex-direction: column;
                 align-items: flex-end;
                 
+                
                 li {
+                    display: flex;
                     padding-bottom: 2rem;
+                    
+                    
                 }
                  
             }
@@ -189,4 +212,39 @@
            
         }
     }
+
+    .nav-container {
+        margin:0 10vw;
+
+
+    }
+}
+
+
+/* BIG SCREENS */ 
+
+@media screen and (min-width: 1400px) {
+
+    .wrapper {
+    margin:0 8rem;
+    }
+    .nav-container {
+        margin:0 20vw;
+
+
+    }
+    .hero {
+        h2 {
+            font-size: 9.5rem;
+        }
+
+        p {
+            font-size: 8.3rem;
+
+            em {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    
 }

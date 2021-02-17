@@ -61,10 +61,9 @@ h4, h5 {
 .nav-container {
   position: fixed;
   top: 0px;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 1rem;
+  position: relative;
+  margin: 1rem;
   font-family: Niveau Grotesk;
   font-weight: lighter;
   height: 1rem;
@@ -73,15 +72,12 @@ h4, h5 {
 
 .nav-container .nav-menu {
   display: flex;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: 1rem;
-  padding: 0;
+  position: absolute;
+  right: 0;
 }
 
 .nav-container .nav-menu a {
-  display: block;
-  padding: 0 1rem;
+  padding-left: 1rem;
 }
 
 .nav-container .a-blue {
@@ -90,30 +86,33 @@ h4, h5 {
 
 /*HOME*/
 .hero {
-  padding: 30vw 1vw;
   text-align: left;
-  margin: 12vw 4vw;
+  margin: 12rem 2rem;
+  text-align: center;
 }
 
 .hero h2 {
-  -webkit-text-stroke: 0.5px white;
+  -webkit-text-stroke: 0.3px white;
   color: black;
-  display: block;
-  font-size: 12vw;
-  margin-bottom: -17vw;
+  font-size: 10.5vw;
+  line-height: 0;
+  position: relative;
+  left: -2rem;
 }
 
 .hero p {
-  text-align: right;
-  display: block;
-  font-size: 10vw;
+  position: relative;
+  left: 1rem;
+  font-size: 9.4vw;
   font-family: Niveau Grotesk;
   font-weight: lighter;
+  line-height: 0%;
 }
 
 .hero p em {
   font-style: normal;
-  font-size: 3vw;
+  font-size: 3.5vw;
+  line-height: 0%;
 }
 
 .description {
@@ -124,7 +123,7 @@ h4, h5 {
 .home-project {
   margin: 10vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 380px));
   grid-gap: 1rem;
   justify-content: center;
 }
@@ -249,12 +248,12 @@ h4, h5 {
 
 .exp ul {
   font-family: Niveau Grotesk;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 .exp ul em {
   margin-left: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
 }
 
 /*WORK*/
@@ -302,9 +301,11 @@ h4, h5 {
 }
 
 .work-container .title {
-  font-size: 3rem;
-  margin-bottom: -1.8rem;
+  font-size: 12vw;
   font-weight: lighter;
+  line-height: 0%;
+  position: relative;
+  bottom: -4vw;
 }
 
 .work-container .work-img {
@@ -321,7 +322,7 @@ h4, h5 {
 .work-container .textile-gallery a {
   z-index: -1;
   height: 200px;
-  background-color: blue;
+  background-color: white;
 }
 
 .work-container .textile-gallery a img {
@@ -340,7 +341,7 @@ h4, h5 {
 .work-container .graphic-gallery a {
   z-index: -1;
   height: 200px;
-  background-color: blue;
+  background-color: white;
 }
 
 .work-container .graphic-gallery a img {
@@ -392,8 +393,8 @@ h4, h5 {
 }
 
 .cta-container .cta .cta-title {
-  font-size: 4rem;
-  letter-spacing: -7px;
+  font-size: 2.5rem;
+  letter-spacing: -2px;
   -webkit-text-stroke: 0.5px white;
   color: black;
 }
@@ -403,12 +404,12 @@ h4, h5 {
   font-weight: normal;
   font-size: 1.5rem;
   position: absolute;
-  top: 4rem;
+  top: 2rem;
 }
 
 .cta-container .cta .contact {
   font-size: 1rem;
-  margin-top: -1.5rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -417,35 +418,36 @@ h4, h5 {
   margin-left: 1rem;
 }
 
-/* Tablet mode */
+/* Tablet-Pc Mode */
 @media screen and (min-width: 768px) {
-  .hero {
-    padding: 0;
-  }
   .description {
     margin: 0 10vw;
     font-size: 3rem;
   }
   .home-project {
-    margin: 10vw;
+    margin: 0 10vw;
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
   .redirect {
-    margin: 10vw 10vw;
+    margin: 5rem 10vw;
     font-size: 1.5vw;
   }
   .top-container {
-    height: 100vh;
+    height: 45rem;
     width: auto;
   }
   .top-container .page-heading {
     font-size: 36rem;
     position: absolute;
-    bottom: -27rem;
+    bottom: -25rem;
+  }
+  #top-work {
+    height: 35rem;
   }
   .profile-present {
-    position: relative;
+    max-width: 900px;
     margin: 0 10vw;
     margin-top: 2rem;
     grid-template-columns: 1fr 2fr;
@@ -462,8 +464,13 @@ h4, h5 {
   .profile-present .profile-extra {
     grid-area: p-ext;
   }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
   .work-top {
-    margin: 2rem 10vw;
+    margin: 0 10vw;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
@@ -480,7 +487,6 @@ h4, h5 {
   }
   .work-container .title {
     font-size: 7vw;
-    margin-bottom: -4vw;
   }
   .work-container .work-services .services-list {
     margin-top: 2.5rem;
@@ -497,6 +503,10 @@ h4, h5 {
   }
   .textile-container .textile-gallery {
     grid-area: t-gal;
+    height: auto;
+  }
+  .textile-container .textile-gallery a {
+    height: 350px;
   }
   .textile-container .work-services {
     grid-area: w-ser;
@@ -511,6 +521,10 @@ h4, h5 {
   }
   .graphic-container .graphic-gallery {
     grid-area: g-gal;
+    height: auto;
+  }
+  .graphic-container .graphic-gallery a {
+    height: 350px;
   }
   .graphic-container .work-services {
     grid-area: w-ser;
@@ -523,6 +537,7 @@ h4, h5 {
     align-items: flex-end;
   }
   .graphic-container .work-services .services-list li {
+    display: flex;
     padding-bottom: 2rem;
   }
   .graphic-container .work-services h4 {
@@ -555,5 +570,27 @@ h4, h5 {
   .cta-container .cta .contact li {
     font-size: 1.5vw;
     margin-left: 1rem;
+  }
+  .nav-container {
+    margin: 0 10vw;
+  }
+}
+
+/* BIG SCREENS */
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    margin: 0 8rem;
+  }
+  .nav-container {
+    margin: 0 20vw;
+  }
+  .hero h2 {
+    font-size: 9.5rem;
+  }
+  .hero p {
+    font-size: 8.3rem;
+  }
+  .hero p em {
+    font-size: 2.5rem;
   }
 }
