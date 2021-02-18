@@ -1,4 +1,6 @@
 
+$font-primary: "orpheuspro", serif;
+$font-secondary: "niveau-grotesk", sans-serif;
 
 body {
     box-sizing: border-box;
@@ -10,9 +12,9 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: Orpheus Pro;
-    font-weight: lighter;
-    font-size: 100%;
+    font-family: $font-primary;
+    font-weight: 400;
+    
 }
 
 
@@ -31,8 +33,8 @@ a {
 }
 
 h4,h5 {
-    font-family: Niveau Grotesk;
-    font-weight: normal;
+    font-family: $font-secondary;
+    font-weight: 400;
     
 }
 
@@ -67,8 +69,8 @@ h4,h5 {
     display: flex;
     position: relative;
     margin: 1rem;
-    font-family: Niveau Grotesk;
-    font-weight: lighter;
+    font-family: $font-secondary;
+    font-weight: 200;
     height: 1rem;
     z-index: 1;
     
@@ -110,8 +112,8 @@ h4,h5 {
         position: relative;
         left: 1rem;
         font-size: 9.4vw;
-        font-family: Niveau Grotesk;
-        font-weight:lighter;
+        font-family: $font-secondary;
+        font-weight:200;
         line-height: 0%;
         
         
@@ -125,7 +127,7 @@ h4,h5 {
 
 .description {
     margin:0 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 .home-project {
@@ -178,8 +180,8 @@ h4,h5 {
         margin-top: 3rem;
         color: white;
         font-size: 1rem;
-        font-weight: lighter;
-        font-family: Niveau Grotesk;
+        font-weight: 200;
+        font-family: $font-secondary;
         position: absolute;
         bottom: 15%;
         left: 0rem;
@@ -187,7 +189,7 @@ h4,h5 {
     .page-heading {
         
         font-size: 10.5rem;
-        font-weight: lighter;
+        font-weight: 400;
         letter-spacing: -0.020em;
         -webkit-text-stroke: 0.5px rgb(255, 255, 255);
         color: black;
@@ -220,8 +222,8 @@ h4,h5 {
 
 
 .profile-desc {
-    font-family: Niveau Grotesk;
-    font-weight: lighter;
+    font-family: $font-secondary;
+    font-weight: 200;
     margin-left: 1rem;
     font-size: 1.6rem;
     line-height: 125%;
@@ -229,7 +231,7 @@ h4,h5 {
 
 .hobby-desc {
     margin-left: 1rem;
-    font-family: Niveau Grotesk;
+    font-family: $font-secondary;
 }
 
 .hobby-gallery {
@@ -269,7 +271,7 @@ h4,h5 {
     margin: 1rem;
     
     ul{
-        font-family: Niveau Grotesk;
+        font-family: $font-secondary;
         font-size: 1.8rem;
         
 
@@ -291,16 +293,20 @@ h4,h5 {
         font-size: 3.5rem;
 
         .list-item-1 {
-             font-family:Niveau Grotesk;
-             font-weight: lighter;
+            font-size: 3.1rem;
+             font-family:$font-secondary;
+             font-weight: 200;
              border-bottom:solid 1px;
         }
         .list-item-2 {
-            font-style: oblique;
+            font-size: 3.1rem;
+            font-style: italic;
             border-bottom:solid 1px;
         }
         .list-item-3 {
-            font-family:Niveau Grotesk;
+            font-family:$font-secondary;
+            font-size: 3.1rem;
+            letter-spacing: -.2rem;
             border-bottom:solid 1px;
             
         }
@@ -324,7 +330,7 @@ h4,h5 {
     border-bottom: solid 1px;
     .title {
         font-size: 12vw;
-        font-weight: lighter; 
+        font-weight: 400; 
         line-height: 0%;  
         position: relative;
         bottom: -4vw;
@@ -378,8 +384,8 @@ h4,h5 {
         padding-bottom: 1.5rem;
         
         .services-list {
-            font-size: 1.3rem;
-            font-style: oblique;
+            font-size: 1rem;
+            font-style: italic;
             justify-content: space-between;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -387,6 +393,7 @@ h4,h5 {
             margin: 0;
             
             li {
+                font-weight: 400;
                 line-height: 1.5rem;
                 display: flex;
                 
@@ -395,7 +402,7 @@ h4,h5 {
     }
     
     .work-desc {
-        font-family: Niveau Grotesk;
+        font-family: $font-secondary;
         font-size: 1.5rem;
 
         h4 {
@@ -403,6 +410,7 @@ h4,h5 {
         }
 
         p {
+            font-weight: 200;
             line-height: 2rem;
             margin-top: -1rem;
         }
@@ -417,6 +425,7 @@ h4,h5 {
 
 .cta-container {
     margin: 1rem;
+    margin-bottom: 5rem;
     
     .cta {
         position: relative;
@@ -428,8 +437,8 @@ h4,h5 {
         color: black;
         }
         .cta-subtitle {
-            font-family: Niveau Grotesk;
-            font-weight: normal;
+            font-family: $font-secondary;
+            font-weight: 400;
             font-size: 1.5rem;
             position: absolute;
             top: 2rem;

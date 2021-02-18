@@ -5,9 +5,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: Orpheus Pro;
-  font-weight: lighter;
-  font-size: 100%;
+  font-family: "orpheuspro", serif;
+  font-weight: 400;
 }
 
 body::before, body::after {
@@ -26,8 +25,8 @@ a {
 }
 
 h4, h5 {
-  font-family: Niveau Grotesk;
-  font-weight: normal;
+  font-family: "niveau-grotesk", sans-serif;
+  font-weight: 400;
 }
 
 /*LINK HOVER*/
@@ -64,8 +63,8 @@ h4, h5 {
   display: flex;
   position: relative;
   margin: 1rem;
-  font-family: Niveau Grotesk;
-  font-weight: lighter;
+  font-family: "niveau-grotesk", sans-serif;
+  font-weight: 200;
   height: 1rem;
   z-index: 1;
 }
@@ -104,8 +103,8 @@ h4, h5 {
   position: relative;
   left: 1rem;
   font-size: 9.4vw;
-  font-family: Niveau Grotesk;
-  font-weight: lighter;
+  font-family: "niveau-grotesk", sans-serif;
+  font-weight: 200;
   line-height: 0%;
 }
 
@@ -117,7 +116,7 @@ h4, h5 {
 
 .description {
   margin: 0 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .home-project {
@@ -164,8 +163,8 @@ h4, h5 {
   margin-top: 3rem;
   color: white;
   font-size: 1rem;
-  font-weight: lighter;
-  font-family: Niveau Grotesk;
+  font-weight: 200;
+  font-family: "niveau-grotesk", sans-serif;
   position: absolute;
   bottom: 15%;
   left: 0rem;
@@ -173,7 +172,7 @@ h4, h5 {
 
 .top-container .page-heading {
   font-size: 10.5rem;
-  font-weight: lighter;
+  font-weight: 400;
   letter-spacing: -0.020em;
   -webkit-text-stroke: 0.5px white;
   color: black;
@@ -200,8 +199,8 @@ h4, h5 {
 }
 
 .profile-desc {
-  font-family: Niveau Grotesk;
-  font-weight: lighter;
+  font-family: "niveau-grotesk", sans-serif;
+  font-weight: 200;
   margin-left: 1rem;
   font-size: 1.6rem;
   line-height: 125%;
@@ -209,7 +208,7 @@ h4, h5 {
 
 .hobby-desc {
   margin-left: 1rem;
-  font-family: Niveau Grotesk;
+  font-family: "niveau-grotesk", sans-serif;
 }
 
 .hobby-gallery {
@@ -247,7 +246,7 @@ h4, h5 {
 }
 
 .exp ul {
-  font-family: Niveau Grotesk;
+  font-family: "niveau-grotesk", sans-serif;
   font-size: 1.8rem;
 }
 
@@ -267,18 +266,22 @@ h4, h5 {
 }
 
 .work-top .work-list .list-item-1 {
-  font-family: Niveau Grotesk;
-  font-weight: lighter;
+  font-size: 3.1rem;
+  font-family: "niveau-grotesk", sans-serif;
+  font-weight: 200;
   border-bottom: solid 1px;
 }
 
 .work-top .work-list .list-item-2 {
-  font-style: oblique;
+  font-size: 3.1rem;
+  font-style: italic;
   border-bottom: solid 1px;
 }
 
 .work-top .work-list .list-item-3 {
-  font-family: Niveau Grotesk;
+  font-family: "niveau-grotesk", sans-serif;
+  font-size: 3.1rem;
+  letter-spacing: -.2rem;
   border-bottom: solid 1px;
 }
 
@@ -302,7 +305,7 @@ h4, h5 {
 
 .work-container .title {
   font-size: 12vw;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 0%;
   position: relative;
   bottom: -4vw;
@@ -355,8 +358,8 @@ h4, h5 {
 }
 
 .work-container .work-services .services-list {
-  font-size: 1.3rem;
-  font-style: oblique;
+  font-size: 1rem;
+  font-style: italic;
   justify-content: space-between;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -365,12 +368,13 @@ h4, h5 {
 }
 
 .work-container .work-services .services-list li {
+  font-weight: 400;
   line-height: 1.5rem;
   display: flex;
 }
 
 .work-container .work-desc {
-  font-family: Niveau Grotesk;
+  font-family: "niveau-grotesk", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -379,6 +383,7 @@ h4, h5 {
 }
 
 .work-container .work-desc p {
+  font-weight: 200;
   line-height: 2rem;
   margin-top: -1rem;
 }
@@ -386,6 +391,7 @@ h4, h5 {
 /*FOOTER*/
 .cta-container {
   margin: 1rem;
+  margin-bottom: 5rem;
 }
 
 .cta-container .cta {
@@ -400,8 +406,8 @@ h4, h5 {
 }
 
 .cta-container .cta .cta-subtitle {
-  font-family: Niveau Grotesk;
-  font-weight: normal;
+  font-family: "niveau-grotesk", sans-serif;
+  font-weight: 400;
   font-size: 1.5rem;
   position: absolute;
   top: 2rem;
@@ -422,7 +428,7 @@ h4, h5 {
 @media screen and (min-width: 768px) {
   .description {
     margin: 0 10vw;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .home-project {
     margin: 0 10vw;
@@ -554,21 +560,21 @@ h4, h5 {
     margin-bottom: 15rem;
   }
   .cta-container .cta .cta-title {
-    font-size: 12vw;
-    letter-spacing: -1vw;
+    font-size: 6rem;
+    letter-spacing: -.4rem;
   }
   .cta-container .cta .cta-subtitle {
-    font-size: 4vw;
+    font-size: 3.2rem;
     position: absolute;
-    top: 12vw;
+    top: 5rem;
   }
   .cta-container .cta .contact {
     position: absolute;
-    bottom: -2vw;
+    bottom: -6rem;
     right: 0px;
   }
   .cta-container .cta .contact li {
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     margin-left: 1rem;
   }
   .nav-container {
@@ -584,13 +590,16 @@ h4, h5 {
   .nav-container {
     margin: 0 20vw;
   }
-  .hero h2 {
+  .cta-container {
+    margin: 0 20vw;
+  }
+  .cta-container .hero h2 {
     font-size: 9.5rem;
   }
-  .hero p {
+  .cta-container .hero p {
     font-size: 8.3rem;
   }
-  .hero p em {
+  .cta-container .hero p em {
     font-size: 2.5rem;
   }
 }
